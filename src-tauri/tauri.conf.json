@@ -1,0 +1,64 @@
+{
+  "package": {
+    "productName": "RNE",
+    "version": "1.0.0"
+  },
+  "build": {
+    "distDir": "../web-build",
+    "devPath": "http://localhost:19006/",
+    "beforeDevCommand": "",
+    "beforeBuildCommand": ""
+  },
+  "tauri": {
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.sarthakpranesh.rne",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.ico"
+      ],
+      "resources": [],
+      "externalBin": [],
+      "copyright": "Sarthak Pranesh",
+      "category": "DeveloperTool",
+      "shortDescription": "RNE is a Expo + Tauri Template",
+      "longDescription": "RNE is a template I (Sarthak Pranesh) made to help me build Beautiful, Efficient, and write once run everywhere apps with Expo (React Native) building to Android, iOS and Web along with Desktop support using Tauri. This template includes some common libraries and configurations that I find myself using in almost all React Native project.",
+      "deb": {
+        "depends": []
+      },
+      "macOS": {
+        "frameworks": [],
+        "minimumSystemVersion": "",
+        "exceptionDomain": "",
+        "signingIdentity": null,
+        "entitlements": null
+      },
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "updater": {
+      "active": false
+    },
+    "allowlist": {
+      "all": true
+    },
+    "windows": [
+      {
+        "title": "RNE",
+        "width": 800,
+        "height": 600,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": "default-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self' img-src: 'self'"
+    }
+  }
+}
